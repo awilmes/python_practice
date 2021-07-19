@@ -1,0 +1,6 @@
+# Find Python install location (Windows)
+
+import os
+import sys
+
+os.path.dirname(sys.executable)
