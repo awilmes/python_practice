@@ -1,0 +1,18 @@
+class Employee():
+    def __init__(self, f, l):
+        self.fName = f
+        self.lName = l
+        print("New employee created: {} {}".format(self.fName, self.lName))
+        
+    def fullName(self):
+        fullName = self.fName + " " + self.lName
+        return fullName
+    
+    def email(self):
+        n1 = self.fName
+        n2 = self.lName
+        email = n1.lower() + "." + n2.lower() + "@company.com"
+        return email
+        
+    def firstName(self):
+        return self.fName  
