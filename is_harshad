@@ -1,0 +1,16 @@
+def is_harshad(num):
+    numStr = str(num)
+    numSum = 0
+    digits = []
+    for i in numStr:
+        toInt = int(i)
+        digits.append(toInt)
+    for i in digits:
+        numSum += i
+    if num % numSum == 0:
+        return "{} exactly divides {}".format(numSum, num)
+    else:
+        return "{} is not exactly divisible by {}".format(num, numSum)
+    
+
+is_harshad(171)
