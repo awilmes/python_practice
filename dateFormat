@@ -1,0 +1,25 @@
+def arrayToString(array):
+    tempStr = ""
+    for i in array:
+        tempStr += i
+    return tempStr
+
+def format_date(date):
+    dateArray = []
+    for i in date:
+        if i == "/":
+            continue
+        dateArray.append(i)
+    if len(dateArray) == 8:
+        year = dateArray[4:8]
+        strYear = arrayToString(year)
+        month = dateArray[0:2]
+        strMonth = arrayToString(month)
+        day = dateArray[2:4]
+        strDay = arrayToString(day)
+        dateStr = strYear + strDay + strMonth
+        return str(dateStr)
+    else:
+        return "Date is not a correct format!"
+    
+format_date("11/12/2019")  
