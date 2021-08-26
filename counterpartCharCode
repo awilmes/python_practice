@@ -1,0 +1,7 @@
+def counterpartCharCode(char):
+    l = ord(char.lower())
+    u = ord(char.upper())
+    return "'{}' => {} | '{}' => {}".format(char.lower(), l, char.upper(), u)
+        
+
+counterpartCharCode("a")
