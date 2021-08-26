@@ -1,0 +1,10 @@
+def list_of_multiples(num, length):
+    multiplier = 1
+    numList = []
+    for i in range(length):
+        value = num * multiplier
+        numList.append(value)
+        multiplier += 1
+    return numList
+
+list_of_multiples(17, 6)
