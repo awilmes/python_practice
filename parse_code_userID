@@ -1,0 +1,24 @@
+def parse_code(encStr):
+    
+    splicing = []
+    outStr = {}    
+    inputStr = encStr.split("0")
+    for i in inputStr:
+        if i == '':
+            continue
+        else:
+            splicing.append(i)
+    index = 0
+    for i in splicing:
+        if index == 0:
+            outStr["first_name"] = i
+        if index == 1:
+            outStr["last_name"] = i
+        if index == 2:
+            outStr["id"] = i
+        index += 1
+    return outStr
+
+parse_code("John000Doe000123")
+parse_code("michael0smith004331")
+parse_code("Thomas00LEE0000043")
