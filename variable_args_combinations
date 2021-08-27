@@ -1,0 +1,11 @@
+def combinations(*args):
+    
+    nums = []
+    for i in args:
+        nums.append(i)
+    result = 1
+    for i in nums:
+        result *= i
+    return result
+
+combinations(2, 3, 4, 5)
