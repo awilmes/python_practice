@@ -1,0 +1,12 @@
+import socket
+
+def get_domain(ip):
+    
+    host = ip
+    vals = []
+    dest = socket.gethostbyaddr(host)
+    for i in dest:
+        vals.append(i)
+    return vals[0]
+
+get_domain("8.8.8.8")
